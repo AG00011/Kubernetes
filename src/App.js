@@ -8,7 +8,7 @@ import {
 import Header from "./View/Header/Header";
 import Content from "./View/Content/Content";
 import Description from "./View/Description/Description";
-import WelcomePage from "./View/Authentication/WelcomePage"; // Welcome page
+import WelcomePage from "./View/Authentication/WelcomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -38,7 +38,7 @@ const App = () => {
     <Router>
       <Header />
       <div className="main-content">
-      {showWelcomePage ? (
+        {showWelcomePage ? (
           <WelcomePage onClose={() => setShowWelcomePage(false)} />
         ) : (
           <Routes>
