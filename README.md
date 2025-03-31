@@ -79,3 +79,5 @@ npm start
 
 minikube start
 minikube service my-processor-service --url
+minikube tunnel
+kubectl get svc my-processor-service
